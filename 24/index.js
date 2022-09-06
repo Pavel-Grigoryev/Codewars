@@ -11,4 +11,9 @@ function getCount(str) {
   return count;
 }
 
-console.log(getCount(' abr aca dAbra'));
+/* Best practies
+
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
+ */
