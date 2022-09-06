@@ -5,3 +5,8 @@ const reverseSeq = n => {
   }
   return arr;
 };
+
+let a = 5;
+
+let b = new Array(6);
+console.log(b);
