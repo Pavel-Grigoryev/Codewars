@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    const uniqueInOrder = (iterable) => {
+        let convIterable = [];
+        if (Array.isArray(iterable)) {
+            convIterable = iterable;
+        } else {
+            convIterable = iterable.split("");
+        }
+        return convIterable.reduce((a, b, i, arr) => {
+            if (b !== arr[i+1]) {
+                a.push(b);
+            }
+           return a;
+      }, []);
+    }
+    console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+</script>
+
+</body>
+</html>
