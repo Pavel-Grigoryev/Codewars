@@ -10,8 +10,14 @@
 <body>
 
 <script>
-    const setAlarm = (employed, vacation) => employed && !vacation
-
+    const findMultiples = (integer, limit) => {
+        let rest =  (limit - limit % integer)/integer;
+        const arr =[];
+        for (let i = 1; i <= rest; i++) {
+            arr.push(integer*i);
+        }
+        return arr;
+    };
 </script>
 
 </body>
