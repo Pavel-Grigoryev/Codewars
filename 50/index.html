@@ -11,7 +11,21 @@
 
 <script>
 
-    const positiveSum = arr => arr.reduce((acc, num) => (num >=0 ? acc + num : acc),0);
+    const correct = string => {
+       return  string.split('').map(el => {
+            switch (el) {
+                case '0':
+                    return 'O'
+                case '5':
+                    return 'S'
+                case '1':
+                    return 'I'
+                default:
+                    return el
+            }
+        }).join('')
+    };
+
 
 
 </script>
